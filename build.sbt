@@ -1,5 +1,5 @@
 /** Name of project */
-name := "UberLogin"
+name := "RedditParseURLs"
 
 /** Organization */
 organization := "com.github.sguzman"
@@ -14,7 +14,7 @@ scalaVersion := "2.12.4"
 scalacOptions ++= Seq("-feature", "-unchecked", "-deprecation", "-encoding", "utf8")
 
 /** Javac parameters */
-javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-server")
+javacOptions ++= Seq("-server")
 
 /** Resolver */
 resolvers ++= Seq(
@@ -29,7 +29,8 @@ resolvers ++= Seq(
 /** Source Dependencies */
 libraryDependencies ++= Seq(
   "org.scalaj" % "scalaj-http_2.12" % "2.3.0",
-  "net.ruippeixotog" % "scala-scraper_2.12" % "2.1.0"
+  "net.ruippeixotog" % "scala-scraper_2.12" % "2.1.0",
+  "com.github.scopt" % "scopt_2.12" % "3.7.0"
 )
 
 /** Make sure to fork on run */
